@@ -1,0 +1,80 @@
+#footer{
+	background-color: map-get($map:$paleta,$key:'uno');
+
+	.container-footer{
+		display:flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		flex-direction: row;
+		border-top: solid 1px slategrey;
+		border-bottom: solid 1px slategrey;
+		width: 100%;
+		height: auto;
+		@media(max-width:708px){
+			flex-direction: column;
+			justify-content: center;
+			align-content: center;
+		}
+		div{
+			padding: 5px;
+			color:map-get($map:$paleta,$key:'dos');
+			font-size: $textMd;
+			height: auto;
+			width: auto;
+			a{
+				display: block;
+				list-style: none;
+				text-decoration: none;
+				font-size: 2rem;
+				font-family: 'PT Serif', serif;
+				color:map-get($map:$paleta,$key:'dos');
+				line-height: 40px;
+					&:hover{
+							color: black;
+							font-weight: 580;
+				}
+				
+			}
+			li{
+					list-style: none;
+					font-family: 'PT Serif', serif;
+					color:map-get($map:$paleta,$key:'dos');
+				}
+			h3{
+					font-family: 'PT Serif', serif;
+					font-size: $textMd;
+
+				}
+		}
+	}
+	
+	.footer__legend{
+		display: flex;
+		font-size: $textSm;
+		font-family: $fontMain;
+		line-height: 150px;
+		height: 150px;
+		align-content: center;
+		justify-content: center;
+		color:map-get($map:$paleta,$key:'dos');
+		letter-spacing: 0.2rem;
+			a{
+					text-decoration: none;
+					color:map-get($map:$paleta,$key:'dos');
+
+			}
+
+	}
+
+	.redes{
+		text-align: center;
+		margin-top: 40px;
+		img{
+			width: 20px;
+			align-content: center;
+			margin: auto 5px;
+		}
+
+	}
+}
+

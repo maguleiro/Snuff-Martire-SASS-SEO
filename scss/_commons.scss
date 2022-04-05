@@ -1,0 +1,85 @@
+// definimos variablers
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-color: rgb(247, 240, 232);
+}
+
+img{
+		width: 100%;
+	}
+
+.text-promo{
+		color: white;
+		background-color: black;
+		font-family: 'Playfair Display', serif;
+		letter-spacing: 0.5rem;
+		text-align: center; 
+		font-size: 2em;
+	}
+
+//colores
+$mainColor:rgb(247, 240, 232);
+$secondaryColor:rgb(61, 30, 0);
+$keyColor:rgb(102, 88, 88);
+
+//sizing
+$w-100:100%;
+$w-50:50%;
+$w-25:25%;
+
+//extends
+.articulo{
+	font-family: 'Work Sans', sans-serif;
+	color: rgb(65, 65, 65);
+	font-weight: 400;
+	font-size: 2rem;
+	width: 90%;
+	height: auto;
+	margin: 30px auto;
+}
+.articulo-titulo{
+	@extend .articulo;
+	color:black;
+	text-align: center;
+	font-size: 2em;
+	font-family: 'Merriweather', serif;
+}
+.titulo-contacto{
+	@extend .articulo-titulo;
+	font-size: 4em;
+}
+
+//mixins
+
+@mixin flex($justify,$direction,$wrap){
+	display: flex;
+	justify-content: $justify;
+	flex-direction:$direction;
+	flex-wrap:$wrap;
+}
+
+//map
+$paleta: (
+	'uno':rgb(247, 240, 232),
+	'dos':rgb(65, 65, 65),
+	'tres':rgb(219, 219, 219),
+	'cuatro':rgb(61, 30, 0),
+	'cinco':rgb(126, 0, 8),
+	'seis':rgb(88, 8, 13),);
+
+//	#58080d
+//	#7e0008
+//	#f7f0e8
+//	#3d1e00
+//	#dbdbdb
+//	#414141 

@@ -1,0 +1,49 @@
+.cont-nav{
+	display: flex;
+	justify-content: space-between;
+	height: auto;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	background-color: map-get($map:$paleta,$key:'uno');
+
+		div{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			background-color: transparent;
+			height: auto;
+			width:auto;
+
+			li{
+				list-style: none;
+				font-size: $textMd;
+				display: inline-block;
+				margin: 5px;
+
+				a{
+					font-size: $textSm;
+					text-decoration: none;
+					color: map-get($map:$paleta,$key:'cuatro');
+					font-family: $fontSecondary;
+					
+					&:hover{
+						color: black;
+						font-weight: 590;
+					}
+				}
+			}
+		}
+}
+
+
+.subCont-nav-img{
+	display: flex;
+	flex-direction: row;
+	background-color: transparent;
+	justify-content: center;
+	height: auto;
+	width:400px;
+	margin-left: 50px;
+}
+
+

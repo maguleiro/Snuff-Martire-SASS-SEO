@@ -1,0 +1,191 @@
+#dashboard{
+
+	article p{
+		font-size: $textXl;
+		text-align: center;
+		margin: 30px 30px 60px 30px;
+	}
+	
+	.container-resenias{
+				@include flex(space-around,row,wrap);
+				//display: flex;
+				//flex-wrap: wrap;
+				//flex-direction: row;
+				//justify-content: space-around;
+				height: auto;
+				margin: auto;
+	}
+	.box-resenias{
+				margin: 10px;
+				width: 300px;
+				height: 150px;
+				color:rgb(65, 65, 65);
+				font-size: $textMd;
+				font-family: $fontMain;
+				text-align: center;
+	}
+	.container-home{
+		@include flex(space-around,row,wrap);
+	//display: flex;
+	//flex-direction: row;
+	//flex-wrap: wrap;
+	//justify-content: space-around;
+	}
+	.container-home-bloque{
+		@include flex(center,row,nowrap);
+		//display: flex;
+		//justify-content: center;
+		//flex-direction: row;
+		//flex-wrap: nowrap;
+		margin: 5px;
+		height: 610px;
+		width: 610px;
+		align-items: center;
+	}
+
+	.box-out{
+		width: auto;
+		height: auto;
+		z-index: 1;	
+	}
+
+	.box-in{
+	display: flex;
+	width: 230px;
+	height: 80px;
+	z-index: 10;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+			button{
+				font-size: 5rem;
+				text-decoration: none;
+				padding: 5px;
+				background-color: rgba(219, 219, 219, 0.8);
+				color: rgb(61, 30, 0);
+				font-family: 'PT Serif', serif;
+				border-style: none;
+				&:hover{
+						cursor: pointer;
+						background-color: rgb(32, 32, 32);
+						color: white;
+						transform: scale(0.97);
+						transition: 0.5s;
+				}
+			}
+	}	
+
+	.historiaFx{
+		img:hover{
+		cursor: pointer;
+		transform: scale(0.98);
+		transition: 0.6s;
+		}
+	}
+}	//finaliza dashboard
+
+#nosotros{
+	.container-historia{
+			display: flex;
+			flex-direction: row;
+			@media(max-width: 800px){
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+						div{
+							display: flex;
+							width: 800px;
+							align-items: center;
+							margin-top: 30px;
+						}
+						p{
+							color: rgb(61, 30, 0);
+							font-family: 'PT Serif', serif;
+							font-size: 5rem;
+							text-align: center;
+						}
+
+	}
+	
+
+}	//finaliza nosotros
+
+#contacto{
+
+	.container-form{
+		@include flex(center,row,wrap);
+		//display: flex;
+		align-items: center;
+		//flex-wrap: wrap;
+		justify-content: center;
+		margin: 50px 30px;
+		min-width: 200px;
+		//flex-direction:row;
+	}
+
+	.form{
+		min-width: 300px;
+		flex: 1;
+		text-align: left;
+		padding: 5px;
+			textarea{
+				min-height: 150px;
+				resize: none;
+			}
+			legend{
+				font-size: 2em;
+			}
+			label{
+				color: darkred;
+			}
+			input[type="submit"]{
+				font-size: 3em;
+				font-family: times new roman;
+			}
+	}
+
+	.form__input{
+		width: 100%;
+		padding: 7px;
+		margin: 9px 0;
+		min-height: 60px;
+		outline: none;
+		font-size: 15px;
+	}
+
+	.form-map{
+		flex: 1;
+		padding: 10px;
+		display: flex;
+			iframe{
+				width: 80%;
+				margin: auto;
+			}
+	}
+
+} //finaliza Contacto
+
+#productos{
+
+	.container-productos{
+			@include flex(flex-start,row,wrap);
+			//display: flex;
+			//flex-wrap: wrap;
+			//justify-content: flex-start;
+			//flex-direction: row;
+			margin-left: 25px;	
+			div	{
+				background-color: transparent;
+				height: 425px;
+				width: 300px;
+				margin: 5px ;
+				figure{
+						text-align: center;
+						font-size: 2.5em;
+						font-weight: bold;
+				}
+			}
+	}
+}
+
